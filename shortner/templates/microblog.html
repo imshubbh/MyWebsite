@@ -1,0 +1,21 @@
+<div class="col-lg-10 mx-auto mt-5 article">
+  <div class="col-lg-10 mx-auto mt-5 article">
+    {% for mblog in mblogs %}
+    <div style="margin-top: 6rem">
+      <h4 class="card-title">
+        <b>{{mblog.Title}}</b>
+        <br />
+      </h4>
+
+      <p class="text-muted" style="margin-top: -10px; font-size: 0.85rem">
+        {{mblog.PublishDate|date:"d N Y"}}
+      </p>
+      <div class="mb-5 text-themed">
+        <p>{{mblog.Micro_Blog|safe}}</p>
+        <a href="{% url 'mblog_detail' mblog.slug %}">View</a>
+        <div class="dot"></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

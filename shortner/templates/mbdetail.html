@@ -1,0 +1,18 @@
+{% for mbdetail in mbdetails %}
+
+<div class="col-lg-10 mx-auto mt-5 article">
+  <div class="col-lg-10 mx-auto mt-5 article">
+    <div class="mb-5" style="margin-top: 4rem">
+      <h3>
+        <b>{{mbdetail.Title}}</b>
+      </h3>
+      <p class="article-metadata text-muted">
+        {{mbdetail.PublishDate|date:"d N Y"}}
+      </p>
+      <p>{{mbdetail.Micro_Blog|safe}}</p>
+    </div>
+    <a href="{% url 'microblog' %}">Back</a>
+  </div>
+</div>
+
+{% endfor %}

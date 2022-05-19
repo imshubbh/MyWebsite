@@ -1,0 +1,88 @@
+{% extends "base.html" %} {% block Calculator %}
+
+<!-- clearScreen() function clear all the value;-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <header>
+        <h3 style="color: #929292;margin-top: 15px;">Average Calculator  </h3>
+      </header>
+      <hr/>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+
+    <div class="col-md-4 st">
+      
+      <h4>First Buy</h3>
+        <hr>
+        <br>
+        <div>
+          <label style="float:left;margin-right:10px;">Units</label>
+          <input class="form-control" type="number" placeholder="Current Quantity" id="units1" autocomplete="off" onchange="unitChanged('units1','error1')" />
+          <span id='error1'></span>
+        </div>
+        <div style="margin-top:15px">
+          <label style="float:left;margin-right:10px;">Price</label>
+          <input class="form-control" type="number" placeholder="Avrage Price" id="Price1" autocomplete="off" onchange="unitChanged('Price1','error2')" />
+          <span id='error2'></span>
+        </div>
+        <br>
+    </div>
+    <div class="col-md-4 st">
+      <h4>Second Buy</h3>
+
+        <hr>
+        <br>
+        <div>
+          <label style="float:left;margin-right:10px;">Units</label>
+          <input class="form-control" type="number" placeholder="New Quantity" id="units2" autocomplete="off" onchange="unitChanged('units2','error3')" />
+          <span id='error3'></span>
+        </div>
+        <div style="margin-top:15px">
+          <label style="float:left;margin-right:10px;">Price</label>
+          <input class="form-control" type="number" placeholder="Current Price" id="Price2" autocomplete="off" onchange="unitChanged('Price2','error4');getAverage()">
+          <span id='error4'></span>
+        </div>
+    </div>
+    <div class="col-md-1 st">
+    </div>
+    <!-- <div class="col-md-3 st">
+      <div>
+        <h4>Other Usefull Apps</h4>
+        <hr>
+       <div>
+         <ul>
+           <li>Updating ...</li>
+         </ul>
+      </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h5 id="investedamount1"></h5>
+    </div>
+    <div class="col-md-4">
+        <h5 id="investedamount2"></h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 st">
+      <h5 id="result"></h5>
+    </div>
+    <div class="col-md-12 st">
+      <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
+      <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    &copy; imshubbh | IMS.AC </div>
+</footer>
+
+</div>
+
+{% endblock Calculator %}
