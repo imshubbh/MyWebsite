@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/baghreut/ims.ac/
+    - export DEPLOYPATH=/home/baghreut/ims.ac/UrlShortner
     - /bin/cp * $DEPLOYPATH
