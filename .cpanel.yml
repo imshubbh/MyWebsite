@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/baghreut/ims.ac/
+    - /bin/cp * $DEPLOYPATH
