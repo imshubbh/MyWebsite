@@ -4,11 +4,6 @@ body {
   font-family: "Sen", sans-serif;
 }
 .main-home {
-  /* text-align: center;
-  max-zoom: 100%;
-  margin-top: 25rem;
-  margin-left: 2rem;
-  margin-right: 2rem; */
   max-zoom: 100%;
   display: flex;
   align-items: center;
