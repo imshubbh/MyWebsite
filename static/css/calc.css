@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
+* {
+  touch-action: manipulation;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  /* max-zoom: 100%; */
+}
+
+.heading,
+.first-lot,
+.second-lot,
+.sub-btn {
+  text-align: center;
+}
+
+.heading {
+  margin-top: 4rem;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  color: #014aa5;
+}
+
+.first-lot {
+  padding-top: 17px;
+  font-weight: lighter;
+  font-size: 20px;
+  /* font-size: 1.1rem; */
+  text-align: center;
+}
+.second-lot {
+  padding-top: 15px;
+  font-weight: lighter;
+  font-size: 20px;
+  /* font-size: 1.1rem; */
+}
+
+::placeholder {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#units1,
+#Price1,
+#units2,
+#Price2 {
+  border: 0.5px solid #000000;
+  border-radius: 3px;
+  text-align: center;
+
+  /* font-size: 1.5rem; */
+}
+#units1 {
+  margin-bottom: 1rem;
+}
+#units2 {
+  margin-bottom: 1rem;
+}
+.avg-price {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.total {
+  text-align: center;
+}
+.avgP {
+  font-weight: 700;
+  font-size: 20px;
+}
+#result {
+  margin-top: -0.7rem;
+  color: #3d94ff;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input {
+  width: 299px;
+  height: 45px;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.sub-btn {
+  padding-top: 2rem;
+}
+#calc {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  width: 149px;
+  height: 45px;
+  color: #25264a;
+  background: #ffffff;
+  border: 1px solid #25264a;
+  border-radius: 3px;
+}
+
+#clr {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+
+  color: #25264a;
+  background: #ffffff;
+  border: 1px solid #25264a;
+  border-radius: 3px;
+  width: 149px;
+  height: 45px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.otherP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* margin-top: -1.7rem; */
+}
+
+.TI {
+  width: 144px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+}
+.TQ {
+  width: 144px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+}
