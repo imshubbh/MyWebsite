@@ -17,8 +17,11 @@ def go(request, pk):
 
 
 
+# def homePage(request):
+#     return render(request, 'Home/HomePage.html')
+
 def homePage(request):
-    return render(request, 'Home/HomePage.html')
+    return render(request, 'Home/calc.html')
 
 def calcPage(request):
     return render(request, 'Home/calc.html')
