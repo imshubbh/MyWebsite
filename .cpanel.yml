@@ -3,3 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/baghreut/ims.ac/UrlShortner
     - /bin/cp * $DEPLOYPATH
+    - /bin/cp -R static $DEPLOYPATH
+    - /bin/cp -R shortner $DEPLOYPATH
+    - /bin/cp -R UrlShortner $DEPLOYPATH
